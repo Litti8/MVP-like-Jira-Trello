@@ -1,0 +1,12 @@
+-- DropForeignKey
+ALTER TABLE "Task" DROP CONSTRAINT "Task_userId_fkey";
+
+-- AlterTable
+ALTER TABLE "Task" ADD COLUMN     "order" INTEGER,
+ALTER COLUMN "status" SET DEFAULT 'PENDING',
+ALTER COLUMN "priority" DROP NOT NULL,
+ALTER COLUMN "description" DROP NOT NULL,
+ALTER COLUMN "userId" DROP NOT NULL;
+
+-- AddForeignKey
+ALTER TABLE "Task" ADD CONSTRAINT "Task_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE SET NULL ON UPDATE CASCADE;
