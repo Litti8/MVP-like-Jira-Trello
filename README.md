@@ -15,7 +15,7 @@ Instructions to install the project.
 
 ```sh
 # Clone the repository
-git clone https://github.com/your-username/repository-name.git
+git clone https://github.com/Litti8/MVP-like-Jira-Trello.git
 
 # Navigate to the project folder
 cd repository-name
@@ -71,7 +71,7 @@ Intrucciones para instalar el proyecto.
 
 ```sh
 # Clona el repositorio
-git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+git clone https://github.com/Litti8/MVP-like-Jira-Trello.git
 
 # Navega a la carpeta del proyecto
 cd nombre-del-repositorio
